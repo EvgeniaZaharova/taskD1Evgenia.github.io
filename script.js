@@ -1,13 +1,16 @@
 let input = "";
 
-$('.btn').click(function () {
+$('.btn').click(function () 
+{
 	
 	let symbol = $(this).data('value');
-	document.getElementById("clearButton").onclick = function() {
+	document.getElementById("clearButton").onclick = function() 
+	{
 		document.getElementById("textInput").value = "";
-	  }
+	}
 	
-	if (symbol == '=') {
+	if (symbol == '=') 
+	{
 		result = eval($('input').val());
 		$('input').val(result);
 		input = "";
